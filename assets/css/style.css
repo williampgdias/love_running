@@ -37,8 +37,22 @@ header a {
 h1 {
   font-family: "Exo 2", sans-serif;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   color: #252525;
+}
+
+#menu {
+  font-size: 110%;
+  letter-spacing: 4px;
+  list-style: none;
+}
+
+#menu > li {
+  margin-bottom: 1em;
+}
+
+.active {
+  border-bottom: 1px solid #3a3a3a;
 }
 
 /* Main content */
