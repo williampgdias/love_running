@@ -95,9 +95,13 @@ nav {
 
 /* Main content */
 main {
-  /* Make main element take up any surplus space to push footer down */
+  /* Enlarge main element to push footer down */
   flex: 1 0 auto;
+  /* Make main element take up any surplus space to push footer down */
   margin-top: 42px;
+  /* Enable flex properties for child elements */
+  display: flex;
+  flex-direction: column;
 }
 
 /* Hero section */
@@ -230,6 +234,52 @@ main {
 #times h3 {
   /* Override the heading colour set in general styles */
   color: #fafafa;
+}
+
+/* Signup */
+#signup {
+  background: url("../images/signup-image.webp");
+  background-size: cover;
+  background-position: 75%;
+  flex-grow: 1;
+}
+
+#signup-form {
+  margin: 20px 10%;
+  padding: 30px;
+  color: #fff;
+  background-color: rgba(60, 60, 60, 0.6);
+}
+
+#signup-form h2 {
+  color: #fafafa;
+  margin-bottom: 20px;
+}
+
+.text-input {
+  width: 100%;
+  height: 25px;
+  background: transparent;
+  border: 1px solid #fafafa;
+  color: #fafafa;
+  border-radius: 2px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+#radio-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.join-button {
+  margin-top: 20px;
+  border-radius: 2px;
+  background-color: #454b1b;
+  color: #fafafa;
+  font-size: 100%;
+  padding: 15px 32px;
 }
 
 /* Media query: large or landscapes phones (576px and up */
