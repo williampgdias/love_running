@@ -26,6 +26,9 @@ h3 {
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #252525;
+}
+
+h1 {
   font-size: 1.8rem;
 }
 
@@ -138,10 +141,6 @@ main {
   text-align: center;
 }
 
-#reasons h3 {
-  font-size: 135%;
-}
-
 #benefits-physical > div,
 #benefits-mental > div {
   line-height: 20px;
@@ -190,6 +189,33 @@ main {
   font-size: 160%;
   padding: 5%;
   color: #3a3a3a;
+}
+
+/* Meetup section */
+#times {
+  background: url("../images/dublin-city.webp") no-repeat center/cover;
+  /* Handles responsivity without the need for a media query */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#times div {
+  color: #fafafa;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  text-align: center;
+  /* This will not wrap on screens of less than 400px wide.
+  Each div will expand to fill the available space on its row */
+  flex-basis: 200px;
+  flex-grow: 1;
+
+  /* Creates a grid of meetup time dives over the background image */
+  border: 2px solid #fff;
+}
+
+#times h3 {
+  /* Override the heading colour set in general styles */
+  color: #fafafa;
 }
 
 /* Media query: tablets and larger (768px and up */
