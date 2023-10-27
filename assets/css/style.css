@@ -32,6 +32,10 @@ h1 {
   font-size: 1.8rem;
 }
 
+.hidden-heading {
+  display: none;
+}
+
 /* Header */
 header {
   background-color: #fff;
